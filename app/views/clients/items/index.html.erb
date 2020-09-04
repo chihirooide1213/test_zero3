@@ -1,0 +1,13 @@
+<h1>Clients::Items#index</h1>
+
+
+
+<% @items.each do |item| %>
+<%= link_to clients_item_path(item.id) do %>
+<%= item.name %>
+<%= item.introduction %>
+<%= attachment_image_tag item,:item_image, format: "jpeg" %>
+<% end %>
+<% end %>
+
+<p>Find me in app/views/clients/items/index.html.erb</p>
